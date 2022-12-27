@@ -9,3 +9,14 @@ C:\Users\Anum\Desktop\RunningTrex\RunningTrex\obj\Debug\RunningTrex.csproj.Gener
 C:\Users\Anum\Desktop\RunningTrex\RunningTrex\obj\Debug\RunningTrex.csproj.CoreCompileInputs.cache
 C:\Users\Anum\Desktop\RunningTrex\RunningTrex\obj\Debug\RunningTrex.exe
 C:\Users\Anum\Desktop\RunningTrex\RunningTrex\obj\Debug\RunningTrex.pdb
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\bin\Debug\RunningTrex.exe.config
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\bin\Debug\RunningTrex.exe
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\bin\Debug\RunningTrex.pdb
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.csproj.AssemblyReference.cache
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.Properties.Resources.resources
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.csproj.GenerateResource.cache
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.csproj.CoreCompileInputs.cache
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.exe
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.pdb
+C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.Trex_Game.resources
