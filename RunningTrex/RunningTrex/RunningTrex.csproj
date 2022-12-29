@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cloud1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ec448674597569.5c34d66fb0229.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\green2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\log %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\My project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\njia_n6dh_161216-ai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pink_dino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\waterrrrrr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pngaaa.com-1230003.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
