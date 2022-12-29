@@ -1,23 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RunningTrex
 {
-    
     public partial class Trex_Game : Form
     {
         bool jump = false;
         int jumpingSpeed;
         int frc = 12;
         int scoreofthegame = 0;
-        int obstSpeed = 10;
+        int obstSpeed = 7;
         readonly Random random = new Random();
         int pos;
         bool isgameover = false;
@@ -25,7 +17,7 @@ namespace RunningTrex
         public Trex_Game()
         {
             InitializeComponent();
-            GameRest();
+            ResetGame();
         }
 
         private void ResetGame()
@@ -34,13 +26,14 @@ namespace RunningTrex
             jumpingSpeed = 0;
             jump = false;
             scoreofthegame = 0;
-            obstSpeed = 10;
+            obstSpeed = 7;
             score.Text = "Score: " + scoreofthegame;
             orange_dino.Image = Properties.Resources.dino;
             isgameover = false;
-            orange_dino.Top = 420;
-            orange_dino.Height = 90;
-            orange_dino.Width = 60;
+            orange_dino.Top = 341;
+            orange_dino.Height = 62;
+            orange_dino.Width = 67;
+            orange_dino.Enabled = true;
 
             foreach (Control t in this.Controls)
             {
@@ -53,24 +46,9 @@ namespace RunningTrex
             game_tmr.Start();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            game_tmr.Start();
-        }
-
-        private void tmr_dino_Tick(object sender, EventArgs e)
-        {
-
+            //game_tmr.Start();
         }
 
         private void tmr_dino_TickEvent(object sender, EventArgs e)
@@ -90,10 +68,10 @@ namespace RunningTrex
             else
             { jumpingSpeed = 12; }
 
-            if (orange_dino.Top > 419 && jump == false)
+            if (orange_dino.Top > 340 && jump == false)
             {
                 frc = 12;
-                orange_dino.Top = 420;
+                orange_dino.Top = 341;
                 jumpingSpeed = 0;
             }
 
@@ -112,10 +90,10 @@ namespace RunningTrex
                     if (orange_dino.Bounds.IntersectsWith(t.Bounds))
                     {
                         game_tmr.Stop();
-                        orange_dino.Enabled= false;
+                        orange_dino.Enabled = false;
 
                         //orange_dino.Image = Properties.Resources.deadFlamigo;
-                        orange_dino.Top = 420;
+                        orange_dino.Top = 341;
                         orange_dino.Height = 70;
                         orange_dino.Width = 100;
 
@@ -127,12 +105,6 @@ namespace RunningTrex
             if (scoreofthegame > 5)
             { obstSpeed = 15; }
         }
-
-        private void pic_dino_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void key_down(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space && jump == false)
@@ -146,20 +118,6 @@ namespace RunningTrex
 
             if (e.KeyCode == Keys.T && isgameover == true)
             { ResetGame(); }
-        }
-        private void GameRest()
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void water_patch_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
