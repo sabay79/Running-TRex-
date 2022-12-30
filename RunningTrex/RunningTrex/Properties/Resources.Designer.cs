@@ -93,6 +93,16 @@ namespace RunningTrex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deadDino {
+            get {
+                object obj = ResourceManager.GetObject("deadDino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dino {
             get {
                 object obj = ResourceManager.GetObject("dino", resourceCulture);
@@ -106,6 +116,16 @@ namespace RunningTrex.Properties {
         internal static System.Drawing.Bitmap lake {
             get {
                 object obj = ResourceManager.GetObject("lake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loading {
+            get {
+                object obj = ResourceManager.GetObject("loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +166,16 @@ namespace RunningTrex.Properties {
         internal static System.Drawing.Bitmap rock {
             get {
                 object obj = ResourceManager.GetObject("rock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trex_game {
+            get {
+                object obj = ResourceManager.GetObject("trex_game", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

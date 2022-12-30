@@ -9,11 +9,12 @@ namespace RunningTrex
         int jumpingSpeed;
         int frc = 12;
         int scoreofthegame = 0;
-        int obstSpeed = 7;
+        int obstSpeed = 15;
         readonly Random random = new Random();
         int pos;
         bool isgameover = false;
-
+        int cloudspeed = 7;
+       
         public Trex_Game()
         {
             InitializeComponent();
@@ -26,15 +27,13 @@ namespace RunningTrex
             jumpingSpeed = 0;
             jump = false;
             scoreofthegame = 0;
-            obstSpeed = 7;
+            obstSpeed = 15;
             score.Text = "Score: " + scoreofthegame;
             orange_dino.Image = Properties.Resources.dino;
             isgameover = false;
             orange_dino.Top = 341;
-            orange_dino.Height = 62;
-            orange_dino.Width = 67;
             orange_dino.Enabled = true;
-
+            
             foreach (Control t in this.Controls)
             {
                 if (t is PictureBox && (string)t.Tag == "obstacle")
@@ -48,7 +47,7 @@ namespace RunningTrex
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //game_tmr.Start();
+            
         }
 
         private void tmr_dino_TickEvent(object sender, EventArgs e)
@@ -74,6 +73,19 @@ namespace RunningTrex
                 orange_dino.Top = 341;
                 jumpingSpeed = 0;
             }
+            cloud1.Left -= cloudspeed;
+            cloud2.Left -= cloudspeed;
+
+            if (cloud1.Left < -250)
+            {
+                cloud1.Left = 500;
+            }
+            if (cloud2.Left < -400)
+            {
+                cloud2.Left = 900;
+            }
+
+        
 
             foreach (Control t in this.Controls)
             {
@@ -92,12 +104,12 @@ namespace RunningTrex
                         game_tmr.Stop();
                         orange_dino.Enabled = false;
 
-                        //orange_dino.Image = Properties.Resources.deadFlamigo;
+                        orange_dino.Image = Properties.Resources.deadDino;
                         orange_dino.Top = 341;
-                        orange_dino.Height = 70;
-                        orange_dino.Width = 100;
+                        orange_dino.Height = 62;
+                        orange_dino.Width = 69;
 
-                        score.Text += "   Press T to Restart";
+                        score.Text += " (T) Restart & (Q) Quit";
                         isgameover = true;
                     }
                 }
@@ -118,6 +130,9 @@ namespace RunningTrex
 
             if (e.KeyCode == Keys.T && isgameover == true)
             { ResetGame(); }
+
+            if (e.KeyCode == Keys.Q && isgameover == true)
+            { System.Windows.Forms.Application.Exit(); }
         }
     }
 }

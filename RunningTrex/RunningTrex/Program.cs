@@ -13,7 +13,7 @@ namespace RunningTrex
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Trex_Game());
+            Application.Run(new Splash());
         }
     }
 }

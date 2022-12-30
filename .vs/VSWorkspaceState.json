@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\RunningTrex",
+    "\\RunningTrex\\RunningTrex"
   ],
-  "SelectedNode": "\\RunningTrex.sln",
+  "SelectedNode": "\\RunningTrex\\RunningTrex\\Splash.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
