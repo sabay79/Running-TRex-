@@ -20,7 +20,6 @@ C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Deb
 C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.csproj.CoreCompileInputs.cache
 C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.exe
 C:\Users\Anum\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.pdb
-C:\Users\Saba\Source\Repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\obj\Debug\RunningTrex.Properties.Resources.resources
 C:\Users\zebbbanu\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\bin\Debug\RunningTrex.exe.config
 C:\Users\zebbbanu\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\bin\Debug\RunningTrex.exe
 C:\Users\zebbbanu\source\repos\sabay79\Running-TRex-\RunningTrex\RunningTrex\bin\Debug\RunningTrex.pdb

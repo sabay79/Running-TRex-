@@ -81,7 +81,7 @@
             // game_tmr
             // 
             this.game_tmr.Interval = 20;
-            this.game_tmr.Tick += new System.EventHandler(this.tmr_dino_TickEvent);
+            this.game_tmr.Tick += new System.EventHandler(this.Tmr_dino_TickEvent);
             // 
             // score
             // 
@@ -128,7 +128,7 @@
             this.orange_dino.Location = new System.Drawing.Point(9, 337);
             this.orange_dino.Margin = new System.Windows.Forms.Padding(2);
             this.orange_dino.Name = "orange_dino";
-            this.orange_dino.Size = new System.Drawing.Size(105, 66);
+            this.orange_dino.Size = new System.Drawing.Size(82, 62);
             this.orange_dino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.orange_dino.TabIndex = 10;
             this.orange_dino.TabStop = false;
@@ -216,8 +216,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.key_down);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.key_up);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_down);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Key_up);
             ((System.ComponentModel.ISupportInitialize)(this.running_road)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.log)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cloud1)).EndInit();

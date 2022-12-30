@@ -13,8 +13,8 @@ namespace RunningTrex
         readonly Random random = new Random();
         int pos;
         bool isgameover = false;
-        int cloudspeed = 7;
-       
+        readonly int cloudspeed = 7;
+
         public Trex_Game()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace RunningTrex
             isgameover = false;
             orange_dino.Top = 341;
             orange_dino.Enabled = true;
-            
+
             foreach (Control t in this.Controls)
             {
                 if (t is PictureBox && (string)t.Tag == "obstacle")
@@ -50,7 +50,7 @@ namespace RunningTrex
 
         }
 
-        private void tmr_dino_TickEvent(object sender, EventArgs e)
+        private void Tmr_dino_TickEvent(object sender, EventArgs e)
         {
             orange_dino.Top += jumpingSpeed;
 
@@ -85,7 +85,7 @@ namespace RunningTrex
                 cloud2.Left = 900;
             }
 
-        
+
 
             foreach (Control t in this.Controls)
             {
@@ -107,7 +107,7 @@ namespace RunningTrex
                         orange_dino.Image = Properties.Resources.deadDino;
                         orange_dino.Top = 341;
                         orange_dino.Height = 62;
-                        orange_dino.Width = 69;
+                        orange_dino.Width = 82;
 
                         score.Text += " (T) Restart & (Q) Quit";
                         isgameover = true;
@@ -117,13 +117,13 @@ namespace RunningTrex
             if (scoreofthegame > 5)
             { obstSpeed = 15; }
         }
-        private void key_down(object sender, KeyEventArgs e)
+        private void Key_down(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space && jump == false)
             { jump = true; }
         }
 
-        private void key_up(object sender, KeyEventArgs e)
+        private void Key_up(object sender, KeyEventArgs e)
         {
             if (jump == true)
             { jump = false; }
