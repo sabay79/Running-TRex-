@@ -47,7 +47,7 @@ namespace RunningTrex
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void tmr_dino_TickEvent(object sender, EventArgs e)

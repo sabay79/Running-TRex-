@@ -204,11 +204,11 @@
             this.Controls.Add(this.running_road);
             this.Controls.Add(this.cloud1);
             this.Controls.Add(this.rock);
-            this.Controls.Add(this.log);
             this.Controls.Add(this.plant_rock);
             this.Controls.Add(this.orange_dino);
             this.Controls.Add(this.bird1);
             this.Controls.Add(this.bird2);
+            this.Controls.Add(this.log);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
